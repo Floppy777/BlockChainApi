@@ -4,7 +4,7 @@ var walletEthereum = require('ethereumjs-wallet');
 var keythereum = require("keythereum");
 var fs = require('fs');
 var router = express.Router();
-router.use(bodyParser.json());cld
+router.use(bodyParser.json());
 
 router
 	.get('/create/:password',function(req,res){	
@@ -16,7 +16,7 @@ router
         	return console.log(err);
     	}
 		});*/
-		keythereum.exportToFile(keyObject); 
+		keythereum.exportToFile(v3File); 
 		res.json(v3File);
 	});
 
